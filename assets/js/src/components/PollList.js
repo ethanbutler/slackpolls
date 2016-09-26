@@ -18,7 +18,6 @@ module.exports = React.createClass( {
         return response.json()
       } )
       .then( function( data ){
-        console.log( data )
         if( eq( data, this.state.polls ) ){
           return
         }
@@ -36,7 +35,7 @@ module.exports = React.createClass( {
   render: function(){
     return <main>
       { this.state.polls.map( poll => {
-        return <Poll key={poll.id} name={poll.name} results={poll.results} />
+        return <Poll key={poll.id} name={poll.name} date={poll.date} results={poll.results} />
       } ) }
     </main>
   }

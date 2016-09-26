@@ -6,6 +6,7 @@ class PollResults {
 
     $this->id = $id;
     $this->name = get_the_title( $id );
+    $this->date = get_the_date( 'M d, Y', $id );
     $this->results = $this->get_post_results( $id );
 
   }

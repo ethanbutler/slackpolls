@@ -1,9 +1,22 @@
 article {
   max-width: 500px;
   margin: 0 auto 70px;
-  border-bottom: 1px solid #dddddd;
+  padding: 15px 25px;
+  border: 1px solid #eee;
+  border-bottom: 3px solid #ccc;
 }
 
 svg {
   overflow: visible;
+  display: block;
+  margin: 0 auto;
+}
+
+article h2 {
+  margin: 0 0 5px;
+}
+
+article h2 + date {
+  display: block;
+  margin: 0 0 15px;
 }

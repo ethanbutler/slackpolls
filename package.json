@@ -4,7 +4,7 @@
   "description": "A WordPress theme to integrate with poll results from Slack.",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t [ babelify --presets [ react ] ] assets/js/src/app.js -o assets/js/build/main.js"
+    "build": "browserify -t [ babelify --presets [ react ] ] assets/js/src/app.js -o assets/js/build/main.js && echo Success"
   },
   "author": "Ethan Butler",
   "license": "MIT",

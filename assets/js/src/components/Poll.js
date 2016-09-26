@@ -1,4 +1,3 @@
-let RandCol  = require( 'randomcolor' )
 let React    = require( 'react' )
 let PieChart = require( 'react-d3-basic' ).PieChart
 
@@ -26,6 +25,7 @@ module.exports = React.createClass( {
     } )
     return <article id={this.props.id}>
       <h2>{this.props.name}</h2>
+      <date>{this.props.date}</date>
       <PieChart
         width={400}
         height={400}
