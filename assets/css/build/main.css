@@ -1,0 +1,9 @@
+article {
+  max-width: 500px;
+  margin: 0 auto 70px;
+  border-bottom: 1px solid #dddddd;
+}
+
+svg {
+  overflow: visible;
+}

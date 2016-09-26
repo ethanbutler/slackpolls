@@ -1,0 +1,21 @@
+{
+  "name": "slackpolls",
+  "version": "1.0.0",
+  "description": "A WordPress theme to integrate with poll results from Slack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ethan Butler",
+  "license": "MIT",
+  "dependencies": {
+    "array-equal": "^1.0.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "randomcolor": "^0.4.4",
+    "react-d3": "^0.4.0",
+    "react-d3-basic": "^1.6.11",
+    "react-dom": "^15.3.2",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
