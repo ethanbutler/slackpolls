@@ -7,23 +7,18 @@ let eq    = require( 'array-equal')
 module.exports = React.createClass( {
 
   getInitialState: function(){
-    return {
-      polls: []
-    }
+    return { polls: [] }
   },
 
   getPollData: function(){
     fetch( this.props.api+'/polls' )
-      .then( function(response){
+      .then( response => {
         return response.json()
       } )
       .then( function( data ){
-        if( eq( data, this.state.polls ) ){
-          return
+        if( JSON.stringify(data) !== JSON.stringify(this.state.polls) ){
+          this.setState( { polls: data } )
         }
-        this.setState( {
-          polls: data
-        } )
       }.bind(this) )
   },
 
