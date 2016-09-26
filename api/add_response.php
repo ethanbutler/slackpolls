@@ -28,6 +28,14 @@ add_action( 'rest_api_init', function(){
         'post_type' => 'poll'
       ] )[0]->ID;
 
+      $results = get_field( 'results', $most_recent_poll_id );
+
+      foreach( $results as $result ){
+        if( $result['name'] === $name ){
+          return [ 'text' => 'Stop answering twice, '.$name.'.' ];
+        }
+      }
+
       add_row( 'results', [
         'name' => $name,
         'response' => $poll_response

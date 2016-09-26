@@ -35,7 +35,7 @@ module.exports = React.createClass( {
 
   render: function(){
     return <main>
-      { this.state.polls.map( function( poll ){
+      { this.state.polls.map( poll => {
         return <Poll key={poll.id} name={poll.name} results={poll.results} />
       } ) }
     </main>

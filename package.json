@@ -4,7 +4,7 @@
   "description": "A WordPress theme to integrate with poll results from Slack.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify -t [ babelify --presets [ react ] ] assets/js/src/app.js -o assets/js/build/main.js"
   },
   "author": "Ethan Butler",
   "license": "MIT",
@@ -12,7 +12,6 @@
     "array-equal": "^1.0.0",
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
-    "randomcolor": "^0.4.4",
     "react-d3": "^0.4.0",
     "react-d3-basic": "^1.6.11",
     "react-dom": "^15.3.2",
